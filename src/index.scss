@@ -1,0 +1,50 @@
+html, body {
+	overflow: hidden;
+}
+
+.w-100 { width: 100%; }
+.pe-none { pointer-events: none; }
+
+
+.v-application.theme--dark {
+
+	::-webkit-scrollbar {
+		width: 5px;
+		height: 5px;
+	}
+	::-webkit-scrollbar-track {
+		background: rgba(0, 0, 0, 0);
+	}
+	::-webkit-scrollbar-thumb {
+		background-color: rgba(255, 255, 255, 0.5);
+		border-radius: 6px;
+		border: 3px solid transparent;
+	}
+	::-webkit-scrollbar-corner {
+		background: #222;
+	}
+}
+
+.v-application.theme--light {
+	::-webkit-scrollbar {
+		width: 11px;
+		height: 11px;
+	}
+	::-webkit-scrollbar-track {
+		background: white;
+	}
+	::-webkit-scrollbar-thumb {
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: 6px;
+		border: 3px solid white;
+	}
+}
+
+
+.theme--dark.v-input:not(.v-input--is-disabled):not(.v-text-field--solo-inverted).v-input--is-focused i {
+	color: white !important;
+}
+.theme--dark.v-input:not(.v-input--is-disabled):not(.v-text-field--solo-inverted).v-input--is-focused input,
+.theme--dark.v-input:not(.v-input--is-disabled):not(.v-text-field--solo-inverted).v-input--is-focused textarea {
+	caret-color: white !important;
+}
